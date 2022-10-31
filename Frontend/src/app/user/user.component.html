@@ -1,0 +1,20 @@
+<div class="container">
+    <div class="row">
+        <div class="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
+            <form #login="ngForm" (ngSubmit)="Ulogin">
+            <div class="mb-3 row">
+                <label for="staticEmail" class="col-sm-2 col-form-label">Username:</label>
+                <div class="col-sm-10">
+                  <input type="text" class="form-control" id="inputText" [(ngModel)]="register.username">
+                </div>
+              </div>
+              <div class="mb-3 row">
+                <label for="inputPassword" class="col-sm-2 col-form-label">Password:</label>
+                <div class="col-sm-10">
+                  <input type="password" class="form-control" id="inputPassword"[(ngModel)]="register.password">
+                </div>
+              </div><button type="button" class="btn btn-primary"  routerLink="/ul" routerLinkActive="active-link">LOGIN</button>
+            </form>
+        </div>
+    </div>
+</div>
